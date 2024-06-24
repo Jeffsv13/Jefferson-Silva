@@ -1,0 +1,4 @@
+Para las pruebas del API, se necesita ejecutar el script de BD adjunta en SQLServer. Se recomienda la utilización de POSTMAN para estas pruebas. Luego de la ejecución del script, se tendra un registro de usuario el cual tiene por correo: jsilva@gmail.com y contraseña:jsilva, estos pueden ser utilizados para la prueba.
+El endpoint /api/Pedido/Historial lista los pedidos registrados en la BD. Para ello se tiene la variable "BuscarPor" que al digitar "fecha" se restringirá la busqueda en las fechas de inicio y fin, de digitar otro motivo se buscara por el numero de pedido.
+El endpoint /api/Pedido/Editar es el que se encarga de actualizar el estado del pedido según la logica del negocio, solo necesita el id del pedido y el id del estado a actualizar.
+Los endpoint tienen validación de token, que por pruebas esta configurado en 5 minutos de vida.
